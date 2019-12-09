@@ -10,6 +10,28 @@ Since I mainly do back-end development, I don’t know anything about the front-
 
 The file structure of `repo` is roughly referred to [hexo-theme-pure](https://github.com/cofess/hexo-theme-pure) and should be clearer. It can be modified according to your needs. If you look at the file structure a little, you will find that the function has not been implemented.
 
+## Changelog
+
+1. [2019-11-19] Add `mainSections` param to avoid hard code.You can set this param to choose which directory under your content folder you want to render. `posts` by default. You can also unset it,but there seems have some problem.
+
+2. [2019-11-19] Support MathJax([PR](https://github.com/xiaoheiAh/hugo-theme-pure/pull/20)) Reference:[MathJax-With-Hugo](https://gohugo.io/content-management/formats/#mathjax-with-hugo)& Upgrade jQuery version([PR](https://github.com/xiaoheiAh/hugo-theme-pure/pull/19)).
+
+   e.g. 
+
+   ```latex
+   $$\begin{cases}
+   a_1x+b_1y+c_1z=d_1\\
+   a_2x+b_2y+c_2z=d_2\\
+   a_3x+b_3y+c_3z=d_3\\
+   \end{cases}
+   $$
+   ```
+
+     <img src="https://raw.githubusercontent.com/xiaoheiAh/imgs/master/20191121103534.png" alt="not-set-mmark" style="zoom:50%;" />
+   <img src="https://raw.githubusercontent.com/xiaoheiAh/imgs/master/20191121104118.png" alt="set-mmark" style="zoom:50%;" />
+
+3. [2019-12-07] beautify toc by [tocbot](https://github.com/tscanlin/tocbot/)
+
 ## Screenshots
 
 ![](https://raw.githubusercontent.com/xiaoheiAh/hugo-theme-pure/master/images/grey.png)

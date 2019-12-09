@@ -19,14 +19,12 @@
         {{- partial "post/wc.html" . }}
       </div>
     </div>
-    <div class="article-entry marked-body" itemprop="articleBody">
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
       {{ .Content }}
     </div>
-    {{- with .Site.Params.enablePostCopyright }}
     <div class="article-footer">
       {{- partial "post/copyright.html" . }}
     </div>
-    {{- end }}
   </article>
   {{- partial "post/comment.html" . }}
 </div>
